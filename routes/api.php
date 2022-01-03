@@ -29,6 +29,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     });
 
     Route::resource('programs', ProgramController::class);
+//Route::resource('programs', ProgramController::class);
     
     //API Route untuk logout
     Route::post('/logout', [AuthController::class, 'logout']);
